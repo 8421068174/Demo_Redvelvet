@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#B71E42</color>
+    <color name="green">#0DAF54</color>
+    <color name="Calender_Title_theam">#008080</color>
+    <color name="btnBack">#FFFFFF</color>
+
+    <color name="colorAccent">#FF4081</color>
+</resources>

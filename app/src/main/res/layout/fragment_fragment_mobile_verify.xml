@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shape1"
+        android:padding="7dp"
+        android:layout_margin="16dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redvelvetlogo"
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:layout_marginTop="22dp"
+            android:elevation="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="9dp"
+
+            android:paddingTop="12dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you from Aurangabad?"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/green"
+                android:paddingTop="12dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:id="@+id/btnradiogroup">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:id="@+id/radiobtnyes" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:id="@+id/radiobtnno" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your Mobile Number"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:paddingTop="12dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ten Digits Only"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="phone"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/shape1"
+                    android:maxLength="10"
+                    android:id="@+id/etmobileno"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="#FFF"
+            android:background="@drawable/buttonbg"
+            android:layout_margin="48dp"
+            android:id="@+id/btnNext"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</FrameLayout>

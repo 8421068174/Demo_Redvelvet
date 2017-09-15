@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Demo_Redvelvet</string>
+
+    <string-array name="relation">
+        <item>Select Relation</item>
+        <item>Mom</item>
+        <item>Father</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Wife</item>
+        <item>Sister</item>
+        <item>Friend</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape1"
+    android:layout_margin="16dp"
+    android:padding="7dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:baselineAligned="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redvelvetlogo"
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:layout_marginTop="22dp"
+            android:elevation="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rv's Customer Loyalty Program"
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:layout_marginTop="18dp"/>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:textColor="#FFF"
+            android:textSize="28dp"
+            android:background="@drawable/offer3"
+
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:id="@+id/discountstring"
+                android:layout_marginTop="37dp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get 10% discount"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+
+
+
+
+            </RelativeLayout>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:background="@drawable/buttonbg"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:id="@+id/btnNext"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

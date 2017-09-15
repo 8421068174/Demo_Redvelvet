@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nikam.com.demo_redvelvet.FeedBack_Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape1"
+        android:elevation="2dp"
+        android:weightSum="4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/shape"
+            android:elevation="4dp"
+            android:padding="3dp"
+            android:src="@drawable/redvelvetlogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="Family Details"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            >
+            <ListView
+                android:id="@+id/familymemberlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_weight="1"
+                >
+
+
+            </ListView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skip &amp; Next"
+                android:textColor="#FFF"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:textSize="15dp"
+             >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+
+
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/buttonbg"
+                    android:id="@+id/btnaddfab"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skip"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/buttonbg"
+                    android:id="@+id/btnskip"
+                    />
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

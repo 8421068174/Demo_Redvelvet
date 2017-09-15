@@ -1,0 +1,281 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nikam.com.demo_redvelvet.FeedBack_Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shape1"
+        android:padding="7dp"
+        android:layout_margin="16dp"
+        android:elevation="4dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/redvelvetlogo"
+            android:padding="3dp"
+            android:background="@drawable/shape"
+            android:layout_marginTop="18dp"
+            android:elevation="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback for Food"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"
+            android:padding="7dp"
+            android:gravity="center"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:orientation="horizontal">
+    <CheckBox
+        android:layout_width="match_parent"
+        android:id="@+id/food"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:checked="true"
+        android:layout_weight="1"
+
+        android:layout_marginLeft="10dp"
+        android:drawableRight="@drawable/ic_restaurant_cutlery_circular_symbol_of_a_spoon_and_a_fork_in_a_circle"
+        />
+    <CheckBox
+        android:id="@+id/cake"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:drawableRight="@drawable/ic_cake"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/holl"
+
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:drawableRight="@drawable/ic_city_hall_building_architecture"/>
+
+
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_gravity="left"
+            android:padding="5dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food Quality"
+                android:layout_weight="1"
+                android:textColor="@color/green"
+                android:textSize="16dp"
+                android:padding="3dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="left|fill_horizontal"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <RatingBar
+                    android:numStars="5"
+                    style="@style/foodRatingBar"
+                   android:id="@+id/food_quility"
+                    android:textColor="@color/green"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_gravity="left"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:layout_weight="1"
+                android:textColor="@color/green"
+                android:textSize="16dp"
+                android:padding="3dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="left|fill_horizontal"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <RatingBar
+                    android:numStars="5"
+                    style="@style/foodRatingBar"
+                    android:id="@+id/service"
+                    android:textColor="@color/green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:weightSum="2"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cleanliness"
+                android:textColor="@color/green"
+                android:textSize="18dp"
+                android:padding="3dp"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="left|fill_horizontal"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <RatingBar
+                    android:numStars="5"
+
+                    style="@style/foodRatingBar"
+                    android:id="@+id/cleanliness"
+                    android:textColor="@color/green"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:weightSum="2"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Response Time"
+                android:textColor="@color/green"
+                android:textSize="18dp"
+
+                android:layout_weight="1"
+                android:layout_marginRight="32dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="left|fill_horizontal"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <RatingBar
+                    android:numStars="5"
+                    android:id="@+id/response_time"
+                    android:textColor="@color/green"
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Value for Money"
+                android:textColor="@color/green"
+                android:textSize="18dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|fill_horizontal"
+                android:layout_weight="1">
+
+                <RatingBar
+                    android:id="@+id/value_for_moeny"
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:numStars="5"
+                    android:textColor="@color/green"
+
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Description"
+                android:gravity="center"
+                android:background="@drawable/shape1"
+                android:id="@+id/customer_occupation"
+                android:inputType="textCapWords"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="#FFF"
+                android:background="@drawable/buttonbg"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:id="@+id/btnNext"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

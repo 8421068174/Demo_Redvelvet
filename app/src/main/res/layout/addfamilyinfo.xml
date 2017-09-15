@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:padding="9dp"
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/name"
+                    android:padding="2dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name "
+                    android:gravity="center"
+
+                    android:background="@drawable/shape1"
+                    android:padding="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/customer_name"
+                    android:inputType="textCapWords"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dob"
+                    android:padding="2dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of Birth"
+                    android:gravity="center"
+                    android:background="@drawable/shape1"
+                    android:padding="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center"
+                    android:inputType="date"
+                    android:id="@+id/customer_dob"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/anni"
+                    android:padding="2dp"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:id="@+id/relation"
+                    android:background="@drawable/shape1"
+                    android:padding="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:entries="@array/relation"
+                    android:layout_gravity="center"
+                    android:inputType="date"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancle"
+            android:elevation="2dp"
+            android:layout_marginRight="2dp"
+            android:textSize="20dp"
+            android:textColor="#FFF"
+            android:layout_weight="1"
+            android:id="@+id/cancle"
+            android:padding="15dp"
+            android:background="@color/colorPrimaryDark"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:elevation="2dp"
+            android:id="@+id/ok"
+            android:layout_marginLeft="2dp"
+            android:textSize="20dp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:background="@drawable/shape"
+            android:padding="15dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+</LinearLayout>
